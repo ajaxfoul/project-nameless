@@ -1,8 +1,12 @@
 class PagesController < ApplicationController
+  before_action :authenticate_user!, only: [:forum]
   def home
   end
   
   def contact
+  end
+  
+  def forum
   end
   
   def about
@@ -14,5 +18,5 @@ class PagesController < ApplicationController
     
     @random_texts = random_texts.sample
   end
-  
+
 end

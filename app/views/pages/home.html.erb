@@ -1,5 +1,13 @@
 
 <center>
 <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
-<%= link_to "Sign In", new_user_session_path, class: "btn btn-primary btn-lg" %>
+<%= link_to "Log In", new_user_session_path, class: "btn btn-primary btn-lg" %>
 </center>
+
+<h1>
+    <% if current_user.try(:admin?) %>
+    <center>
+    <h2 style="font-family:Talo">Hello admin</h2>
+    </center>
+    <% end %>
+</h1>
