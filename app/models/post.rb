@@ -1,6 +1,6 @@
 class Post < ApplicationRecord
 
-validates:course, presence: true, length: {minimum: 5}
+    validates :body, presence: true, length: {minimum: 5}
     
     
   belongs_to :user
