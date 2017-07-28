@@ -21,6 +21,8 @@ gem 'devise'
 
 gem 'gravtastic'
 
+gem 'mailboxer'
+
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'capybara', '~> 2.13'
